@@ -66,7 +66,18 @@ goto tomcat home directory and Add below users to conf/tomcat-user.xml file
 if sometyhing happen with user file at conf/tomcat-user.xml, try to remove the old user and adding the new one, then restart
 
 command line for testing change file in github repository (using jenkins server):
+
+precommand for github at jenkins server
+git init
 git clone https://github.com/bradberton/hello-world.git
+cd hello-world; git pull
+git config --global user.email "andikhaidir11@gmail.com"
+git config --global user.name "anderson"
+commit github
+going to the directory at 
+git add .
+git commit -m "modified <filename>"
+git push origin master
 
 
 
