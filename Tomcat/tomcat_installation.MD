@@ -76,6 +76,7 @@ git config --global user.email "andikhaidir11@gmail.com"
 git config --global user.name "anderson"
 commit github
 going to the directory at : /root/hello-world/webapp/src/main/webapp
+change the file index.jsp
 git add .
 git commit -m "modified <filename>"
 git push origin master
