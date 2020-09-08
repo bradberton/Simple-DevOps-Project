@@ -65,3 +65,8 @@ goto tomcat home directory and Add below users to conf/tomcat-user.xml file
 
 if sometyhing happen with user file at conf/tomcat-user.xml, try to remove the old user and adding the new one, then restart
 
+command line for testing change file in github repository (using jenkins server):
+git clone https://github.com/bradberton/hello-world.git
+
+
+
