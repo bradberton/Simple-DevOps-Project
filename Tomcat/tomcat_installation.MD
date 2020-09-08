@@ -63,3 +63,5 @@ goto tomcat home directory and Add below users to conf/tomcat-user.xml file
    ```
 1. Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
 
+if sometyhing happen with user file at conf/tomcat-user.xml, try to remove the old user and adding the new one, then restart
+
