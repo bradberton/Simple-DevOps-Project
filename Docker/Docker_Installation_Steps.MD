@@ -14,7 +14,7 @@
    service docker start
    service docker status
    ```
-1. Create a user called dockeradmin (this is done at jenkins server)
+1. Create a user called dockeradmin 
    ```sh
    useradd dockeradmin
    passwd dockeradmin
