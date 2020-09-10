@@ -40,4 +40,8 @@ So far we have completed the installation of maven software to support maven plu
 
 2. Configure maven path
   - `Manage Jenkins` > `Global Tool Configuration` > `Maven`
+  
+3. To create first job at maven, download github plugin at jenkins server
+  - `Manage Plugin` > `Github` , then `Manage Jenkins` > `Global Tool Configuration` > `Github`
+  
 
