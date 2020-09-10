@@ -32,6 +32,7 @@
    go to Jenkins configuration, at ssh servers use
    name : <hostname-docker server>
    username : dockeradmin
+   then test connection, apply and save
    
    when create job for testing docker to sent war file to docker server
    at tab post build action, at tarnsfer section :
