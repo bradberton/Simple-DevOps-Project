@@ -23,6 +23,8 @@
    ```
    usermod -aG docker dockeradmin
    ```
+1. install plugin publish at ssh in jenkins server
+   
 ### Validation test
 1. Create a tomcat docker container by pulling a docker image from the public docker registry
    ```sh
@@ -71,4 +73,4 @@ Please follow below steps to install docker CE on CentoOS server instance. For R
    sudo docker run hello-world
    ```
    
-1. install plugin publish at ssh in jenkins server  
+  
