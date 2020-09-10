@@ -24,6 +24,13 @@
    usermod -aG docker dockeradmin
    ```
 1. install plugin publish at ssh in jenkins server
+   ```sh
+   go to docker server, edit file /etc/ssh/sshd -->  PasswordAuthentication yes
+   then service ssh restart
+   go to Jenkins configuration, at ssh servers use
+   name : <hostname-docker server>
+   username : dockeradmin
+   
    
 ### Validation test
 1. Create a tomcat docker container by pulling a docker image from the public docker registry
