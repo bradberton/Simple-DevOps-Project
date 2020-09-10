@@ -23,13 +23,21 @@
    ```
    usermod -aG docker dockeradmin
    ```
-1. install plugin publish at ssh in jenkins server
+1. Integrating docker with jenkins
    ```sh
+   install plugin publish at ssh in jenkins server
+   
    go to docker server, edit file /etc/ssh/sshd -->  PasswordAuthentication yes
    then service ssh restart
    go to Jenkins configuration, at ssh servers use
    name : <hostname-docker server>
    username : dockeradmin
+   
+   when create job for testing docker to sent war file to docker server
+   at tab post build action, at tarnsfer section :
+   
+   source files : webapp/target/*.war
+   remove prefix : webapp/target
    
    
 ### Validation test
