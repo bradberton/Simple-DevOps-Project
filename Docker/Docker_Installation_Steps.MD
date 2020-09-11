@@ -31,6 +31,7 @@
    then service ssh restart
    go to Jenkins configuration, at ssh servers use
    name : <hostname-docker server>
+   hostname : <ip local docker server>
    username : dockeradmin
    then test connection, apply and save
    
