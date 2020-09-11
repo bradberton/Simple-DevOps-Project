@@ -30,12 +30,12 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    echo "ansadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
    ```
    
-1. Log in as a ansadmin user on master and generate ssh key (on Control node)
+1. Log in as a ansadmin user on master and generate ssh key (on Control node)/ on ansible-server
    ```sh 
    sudo su - ansadmin
    ssh-keygen
    ```
-1. Copy keys onto all ansible managed hosts (on Control node)
+1. Copy keys onto all ansible managed hosts (on Control node)/ on ansible-server
    ```sh 
    ssh-copy-id ansadmin@<target-server>
    ```
