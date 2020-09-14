@@ -25,7 +25,7 @@
    ```
 1. Integrating docker with jenkins
    ```sh
-   install plugin publish at ssh in jenkins server
+   install plugin publish over ssh in jenkins server
    
    go to docker server, edit file /etc/ssh/sshd_config -->  PasswordAuthentication yes
    then service ssh restart
