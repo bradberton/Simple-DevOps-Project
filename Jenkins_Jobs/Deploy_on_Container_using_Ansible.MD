@@ -1,5 +1,5 @@
 # Deploy on a docker container using Ansible
-# *Jenkins Job name:* `Deploy_on_Container_using_ansible`
+# *Jenkins Job name:* `first_job_Container_on_ansible_server`
 
 ### Pre-requisites
 
@@ -57,9 +57,9 @@ Enable connection between Ansible-control-node and Jenkins
        -  `Advanced` > chose `Use password authentication, or use a different key`
 		 - password: `*******`
  
-### Steps to create "Deploy_on_Container_using_ansible" Jenkin job
+### Steps to create "first_job_Container_on_ansible_server" Jenkin job
 #### From Jenkins home page select "New Item"
-   - Enter an item name: `Deploy_on_Container_using_ansible`
+   - Enter an item name: `first_job_Container_on_ansible_server`
      - Copy from: `Deploy_on_Container`
      
    - *Source Code Management:*
