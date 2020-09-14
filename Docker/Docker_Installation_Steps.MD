@@ -39,29 +39,7 @@
    at tab post build action, at tarnsfer section :
    
    source files : webapp/target/*.war
-   remove prefix : webapp/target 
-   
-   Test create images 
-   create image from latest image use and  create Dockerfile (both in docker server and jenkins server) 
-   cd /home/dockeradmin
-   touch Dockerfile
-   nano Dockerfile then add :
-============================================
-FROM tomcat:8.0
-
-MAINTAINER anderson
-
-COPY ./webapp.war /usr/local/tomcat/webapps
-============================================
-   testing create war file first by conecting to jenkins server first without any exec command  
-   copy webapp.war file at /home/dockeradmin/webapp/target or /home/ansadmin/webapp/target  to /home/dockeradmin/ 
-   docker build -t <new-image-name> .
-   then testing it by : docker run -d --name <test-image-container> -p 8081:8080 <new-image-name>```
-   
-   
-   
-
-   
+   remove prefix : webapp/target```    
    
 ### Validation test
 1. Create a tomcat docker container by pulling a docker image from the public docker registry
