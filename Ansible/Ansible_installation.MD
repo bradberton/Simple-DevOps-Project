@@ -49,7 +49,7 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    service docker start
    service docker start 
    
-   # add user to docker group 
+   # add user to docker group in asible server and docker server
    usermod -aG docker ansadmin
    
    #edit ssh to open connection
