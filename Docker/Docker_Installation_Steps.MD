@@ -8,6 +8,8 @@
 1. Install docker and start docker services
    ```sh 
    yum install docker -y 
+   yum install python -y 
+   yum install python-pip -y
    pip install docker
    
    docker --version 
