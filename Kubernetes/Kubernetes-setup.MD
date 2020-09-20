@@ -58,7 +58,7 @@
    kops create cluster --cloud=aws --zones=ap-southeast-1a --name=new.k8s.bradberton.tech --dns-zone=bradberton.tech --dns private 
     ```
 
-1. Create kubernetes cluser
+1. Create kubernetes cluster
     ```sh
     kops update cluster new.k8s.bradberton.tech --yes
     ```
