@@ -41,11 +41,11 @@
 
 1. create an S3 bucket
    ```sh
-    aws s3 mb s3://demo.k8s.valaxy.net
+    aws s3 mb s3://new.k8s.bradberton.tech
    ```
 1. Expose environment variable:
    ```sh
-    export KOPS_STATE_STORE=s3://demo.k8s.valaxy.net
+    export KOPS_STATE_STORE=s3://new.k8s.bradberton.tech
    ```
 
 1. Create sshkeys before creating cluster
@@ -55,12 +55,12 @@
 
 1. Create kubernetes cluster definitions on S3 bucket
    ```sh
-   kops create cluster --cloud=aws --zones=ap-south-1b --name=demo.k8s.valaxy.net --dns-zone=valaxy.net --dns private 
+   kops create cluster --cloud=aws --zones=ap-south-1b --name=new.k8s.bradberton.tech --dns-zone=bradberton.tech --dns private 
     ```
 
 1. Create kubernetes cluser
     ```sh
-    kops update cluster demo.k8s.valaxy.net --yes
+    kops update cluster new.k8s.bradberton.tech --yes
     ```
 
 1. Validate your cluster
@@ -75,7 +75,7 @@
 
 1. To delete cluster
     ```sh
-     kops delete cluster demo.k8s.valaxy.net --yes
+     kops delete cluster new.k8s.bradberton.tech --yes
     ```
    
 #### Deploying Nginx pods on Kubernetes
