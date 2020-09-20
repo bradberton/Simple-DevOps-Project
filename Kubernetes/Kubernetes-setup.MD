@@ -35,7 +35,7 @@
 1. Create a Route53 private hosted zone (you can create Public hosted zone if you have a domain)
    ```sh
    Route53 --> hosted zones --> created hosted zone  
-   Domain Name: valaxy.net
+   Domain Name: bradberton.tech
    Type: Private hosted zone for Amzon VPC
    ```
 
