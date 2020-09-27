@@ -41,7 +41,7 @@
 
 1. create an S3 bucket
    ```sh
-    aws s3 mb s3://new.k8s.bradberton.tech
+    aws s3 mb s3://new.k8s.bradberton.com
    ```
 1. Expose environment variable:
    ```sh
