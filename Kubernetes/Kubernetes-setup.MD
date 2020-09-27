@@ -83,7 +83,7 @@
 1. Deploying Nginx Container
     ```sh
     kubectl run sample-nginx --image=nginx --replicas=2 --port=80
-    # kubectl run simple-devops-project --image=yankils/simple-devops-image --replicas=2 --port=8080
+    kubectl run tomcat-cluster --image=yankils/simple-devops-image --replicas=2 --port=8080
     kubectl get pods
     kubectl get deployments
    ```
@@ -91,6 +91,6 @@
 1. Expose the deployment as service. This will create an ELB in front of those 2 containers and allow us to publicly access them.
    ```sh
    kubectl expose deployment sample-nginx --port=80 --type=LoadBalancer
-   # kubectl expose deployment simple-devops-project --port=8080 --type=LoadBalancer
+   kubectl expose deployment simple-devops-project --port=8080 --type=LoadBalancer
    kubectl get services -o wide
    ```
