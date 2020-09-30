@@ -82,8 +82,8 @@
 #### Deploying Nginx pods on Kubernetes
 1. Deploying Nginx Container
     ```sh
-    kubectl run sample-nginx --image=nginx --replicas=2 --port=80
-    kubectl run tomcat-cluster --image=bradberton/new-image --replicas=2 --port=8080
+    kubectl run sample-nginx --image=nginx  --port=80
+    kubectl run tomcat-cluster --image=bradberton/new-image --port=8080
     kubectl get pods #checking pods
     kubectl delete pods <pod>
     kubectl get deployments #checking deployment
