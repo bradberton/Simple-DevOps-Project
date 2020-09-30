@@ -45,7 +45,7 @@
    ```
 1. Expose environment variable:
    ```sh
-    export KOPS_STATE_STORE=s3://new.k8s.bradberton.com
+    export KOPS_STATE_STORE=s3://new.k8s.bradberton.com port:8080
    ```
 
 1. Create sshkeys before creating cluster
@@ -82,10 +82,8 @@
 #### Deploying Nginx pods on Kubernetes
 1. Deploying Nginx Container
     ```sh
-    apt  install awscli
-    aws eks update-kubeconfig --name new.k8s.bradberton.com
-    kubectl run sample-nginx --image=nginx  --port=80
-    kubectl run tomcat-cluster --image=bradberton/new-image --port=8080
+    kubectl run sample-nginx --kubeconfig=/home/ubuntu/.kube/config --image=nginx  --port=80
+    kubectl run tomcat-cluster --kubeconfig=/home/ubuntu/.kube/config --image=bradberton/new-image --port=8080
     kubectl get pods #checking pods
     kubectl delete pods <pod>
     kubectl get deployments #checking deployment
