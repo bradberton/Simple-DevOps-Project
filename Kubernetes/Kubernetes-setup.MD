@@ -84,13 +84,13 @@
     ```sh
     kubectl run sample-nginx --image=nginx --replicas=2 --port=80
     kubectl run tomcat-cluster --image=bradberton/new-image --replicas=2 --port=8080
-    kubectl get pods
-    kubectl get deployments
+    kubectl get pods #checking pods
+    kubectl get deployments #checking deployment
    ```
 
 1. Expose the deployment as service. This will create an ELB in front of those 2 containers and allow us to publicly access them.
    ```sh
    kubectl expose deployment sample-nginx --port=80 --type=LoadBalancer
    kubectl expose deployment simple-devops-project --port=8080 --type=LoadBalancer
-   kubectl get services -o wide
+   kubectl get services -o wide #checking services
    ```
