@@ -84,8 +84,9 @@
     ```sh
     cp -R .kube/ /root (as sudo su -l)
     kubectl create secret docker-registry pass-dockerhub  --docker-username=bradberton  --docker-password=admin12345 --docker-email=vienoktaviani@gmail.com
+    kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "pass-dockerhub"}]}'
     #kubectl run sample-nginx --kubeconfig=/home/ubuntu/.kube/config --image=nginx  --port=80
-    kubectl run tomcat-cluster --image=bradberton/new-image --port=8080
+    kubectl run tomcat-cluster --image=bradberton/new-image --port=80
     kubectl get pods #checking pods
     kubectl delete pods <pod>
     kubectl get deployments #checking deployment
