@@ -82,7 +82,9 @@
 #### Deploying Nginx pods on Kubernetes
 1. Deploying Nginx Container
     ```sh
-    kubectl run sample-nginx --kubeconfig=/home/ubuntu/.kube/config --image=nginx  --port=80
+    cp -R .kube/ /root (as sudo su -l)
+    kubectl create secret docker-registry pass-dockerhub  --docker-username=bradberton  --docker-password=admin12345 --docker-email=vienoktaviani@gmail.com
+    #kubectl run sample-nginx --kubeconfig=/home/ubuntu/.kube/config --image=nginx  --port=80
     kubectl run tomcat-cluster --kubeconfig=/home/ubuntu/.kube/config --image=bradberton/new-image --port=8080
     kubectl get pods #checking pods
     kubectl delete pods <pod>
